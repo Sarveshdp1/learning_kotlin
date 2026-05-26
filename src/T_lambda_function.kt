@@ -4,7 +4,11 @@
 // sum of 2 num
 val sum1 = {a:Int, b:Int -> a+b}
 
-// sum of 3 num Int after -> is return type
+/*
+- sum of 3 num
+- Int after -> is return type
+- explicitly declared data type
+ */
 val sum2: (Int, Int, Int) -> Int = {a,b,c -> a+b+c}
 
 // sum of array elements using lambda expression function
@@ -16,7 +20,7 @@ val lambdaAsClass: String.(Int) -> String = { this + it } // "this" string input
 fun main() {
     val name = {println("Hello Sarvesh")}
     name()
-    name.invoke()
+    name.invoke() // invoke is used to call the object as a function because in kotlin functions are object
 
     val n1 = 5
     val n2 = 5
