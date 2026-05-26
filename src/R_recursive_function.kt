@@ -37,6 +37,6 @@ fun main() {
     println(factorial(5))
     println(fibonacci(6))
 
-    var arg = arrayOf(1,2,3,4,5,6,7,8,9,10)
+    val arg = arrayOf(1,2,3,4,5,6,7,8,9,10)
     println(sumArray(arg, arg.size))
 }
