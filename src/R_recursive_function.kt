@@ -1,5 +1,10 @@
 // function recursion happens when the function calls it-self which is called recursive function
 
+/*
+- recursive function calls the function it-self till the condition become true and store the function calls in stack memory
+- then while return it come in reverse order and do the operation which were waiting while the function is calling it-self
+ */
+
 // factorial
 fun factorial(num: Int) : Long {
     var result:Long = 0
