@@ -26,7 +26,7 @@ fun main() {
     // calling anonymous function and passing arguments
     println(evenOdd(-35))
     sum0(4,2)
-    sum1(5,20)
+    sumf(5,20)
 
     val arr = arrayOf(1,2,3,4,5)
     // anonymous function return
