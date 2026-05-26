@@ -18,7 +18,7 @@ fun factorial(num: Int) : Long {
 // fibonacci
 fun fibonacci(num: Int):Long {
     return if ((num == 1) || (num == 2)) {
-        num.toLong()
+        1L
     } else {
         fibonacci(num - 1) + fibonacci(num - 2)
     }
