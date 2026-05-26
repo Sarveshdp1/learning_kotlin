@@ -48,5 +48,5 @@ fun main() {
     // lambda function return
     val arr2 = arrayOf(1,2,3,4,5)
     arr2.forEach { i -> if ( i == 3) return ; println(i) }
-    print("hello word") // on the 3 the return exit the main function so the print function never runs
+    print("hello word") // on the 3 the return exit the main function so the print function never runs so it's important to use labeled return
 }
