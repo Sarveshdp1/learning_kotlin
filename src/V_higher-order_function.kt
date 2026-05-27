@@ -76,7 +76,7 @@ fun main() {
     higherOrderAddition(addition)
 
     // calling the higher-order function and passing the arguments for aligibility lambda function
-    higherOrderinput(434,aligibility)
+    higherOrderinput(20,aligibility)
 
     // calling the higher-order function and passing the argument for factorial normal function
     // :: is used to make/reference a function as a value so it can be passed as parameter but lambda is a function value so we don't need it for lambda
