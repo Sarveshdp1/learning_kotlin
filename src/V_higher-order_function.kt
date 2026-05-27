@@ -47,11 +47,13 @@ fun higherOrderFacto(num: Int, func:(Int) -> Int) {
     println("factorial of $num is $result")
 }
 
+// normal function which takes single Int parameter and return Int value
 fun fibo(num:Int): Int {
     return if ((num == 1) || (num == 2)) 1
     else fibo(num-1) + fibo(num-2)
 }
 
+// higher-order function which returns function which takes single Int type parameter and return Int value
 fun higherOrderFibo(): ((Int) -> Int) {
     return ::fibo
 }
