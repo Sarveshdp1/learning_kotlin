@@ -15,10 +15,13 @@ fun main(args: Array<String>) {
     println("factorial of $number is $factorial")
 
     // table
+    print("\nEnter Number: ")
     var num1 = scan.nextInt()
     var temp = 1
+
+    println("Multiplication Table of $num1")
     do {
         println("$num1 * $temp = ${num1 * temp}")
         temp++
-    } while (temp < 10)
+    } while (temp <= 10)
 }
