@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
 
     // table
     print("\nEnter Number: ")
-    var num1 = scan.nextInt()
+    val num1 = scan.nextInt()
     var temp = 1
 
     println("Multiplication Table of $num1")
