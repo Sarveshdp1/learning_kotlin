@@ -34,7 +34,7 @@ fun main() {
     val arr:Array<Int> = arrayOf(1,2,3,4)
     println(sumOfArray.invoke(arr))
 
-    // lambda as class
+    // lambda as class extension
     val result = "Sarvesh's age iss ".lambdaAsClass(20)
     println(result)
 
