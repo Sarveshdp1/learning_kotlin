@@ -10,19 +10,21 @@ fun main() {
 
     // immutable set
 
-    val immutableSet = setOf("Sarvesh","Siddharth",26,74,26,44) // ignored//removed the 2nd 26 element because set don't supports duplicate elements
+    val immutableSet = setOf("Sarvesh","Siddharth",26,74,26,44) // ignored/removed the 2nd 26 element because set don't allow storing duplicate elements
     println(immutableSet)
 
     // accessing elements
     // [] and .get() wont work with sets
-    println(immutableSet.elementAt(2))
-    println(immutableSet.elementAt(immutableSet.size-1))
-    println(immutableSet.first()) // first element
-    println(immutableSet.last()) // last element
+    println("element at index 2 : ${immutableSet.elementAt(2)}")
+    println("element at last index : ${immutableSet.elementAt(immutableSet.size-1)}")
+    println("first element : ${immutableSet.first()}") // first element
+    println("last index ${immutableSet.last()}") // last element
+    println()
 
     // indexing
-    println(immutableSet.indexOf("Siddharth"))
-    println(immutableSet.lastIndexOf(26)) // only lastIndexOf() works and .lastIndex don't use .size-1 to know last index
+    println("index of Siddharth : ${immutableSet.indexOf("Siddharth")}")
+    println("index of 26 : ${immutableSet.lastIndexOf(26)}") // only lastIndexOf() works and .lastIndex don't use .size-1 to know last index
+    println()
 
     // basic functions of set
     val numbers = setOf(1,2,3,4,5)
@@ -36,6 +38,7 @@ fun main() {
     println("set has num 3 and 9 : ${numbers.containsAll(setOf(3,9))}")
     println("Is numbers set is empty : ${numbers.isEmpty()}")
     println("is numbers and num set contains same elements : ${numbers == num}")
+    println()
 
     // mutable set
     println("\nMutable Set")
@@ -48,12 +51,14 @@ fun main() {
     println(mutableSet)
     mutableSet.addAll(setOf(50,40,30)) // add multiple elements
     println(mutableSet)
+    println()
 
     // removing elements
     mutableSet.remove(20)
     println(mutableSet)
     mutableSet.removeAll(setOf(30,50))
     println(mutableSet)
+    println()
 
     // iterator creates iterator and work based on cursor detailed explanation available in 26_collection_list.kt
     val iterator = mutableSet.iterator()
