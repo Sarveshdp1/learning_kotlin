@@ -1,4 +1,4 @@
-// set is generic unordered element collection which does not allow to contain duplicate elements
+// set is generic unordered element collection that allows storing multiple datatype of elements but does not contain duplicate elements
 // set are unordered means no index based access [] or get()
 // sets are internally maintains insertion order. Kotlin sets internally uses linkedHasSet which uses linked list to remember the insertion order
 
