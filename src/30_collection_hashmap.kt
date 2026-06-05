@@ -1,7 +1,7 @@
 // hashmap is unordered mutable collection which stores data in key-value pair and the key needs to be unique but the value can be duplicate and the key only can store one value
 // hash table implemented hashmap does not guarantee of order of key-value neither the order on insertion
 
-fun main(args: Array<String>) {
+fun main() {
 
     // there are four public constructor for hashmap
 
