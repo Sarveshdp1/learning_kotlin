@@ -2,7 +2,7 @@
 // operators has 6 types
 // Arithmetic + - * / %
 // Relational < > <= >= == !=
-// Assigment = += -= *= /= %=
+// Assignment = += -= *= /= %=
 // Unary ++ --
 // logical && || !
 // Bitwise
@@ -20,7 +20,7 @@ fun main() {
     println(a?.equals(b) ?: (b === null)) //  a==b
     println((!(a?.equals(b) ?: (b === null)))) // a!=b
 
-    // Assigment
+    // Assignment
     var n1 = 5
     var n2 = 555
     println(n1)

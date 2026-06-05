@@ -55,7 +55,7 @@ fun main() {
     intro.clear()
     println(intro)
 
-    // .isEmpty() checks weather the list is empty or not returns boolean
+    // .isEmpty() checks whether the list is empty or not returns boolean
     println(intro.isEmpty())
 
     // .size return the size of list 1...n

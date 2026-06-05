@@ -64,8 +64,8 @@ fun main(args: Array<String>) {
     // string iteration using for loop
     val myName: String = "Sarvesh"
     print("\nUsing without index: ")
-    for (latters in myName) {
-        print("$latters ")
+    for (letters in myName) {
+        print("$letters ")
     }
     print("\nUsing indices: ")
     for (i in myName.indices) {

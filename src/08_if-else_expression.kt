@@ -1,4 +1,4 @@
-// if else statement/expression is used to make decision weather it true or false
+// if else statement/expression is used to make decision whether it true or false
 
 fun main(args: Array<String>) {
     val num = 5
@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
         println("$num the number is greater then 1")
     }
 
-    // if-else the if is executed when true and else is exicuted when false
+    // if-else the if is executed when true and else is executed when false
     val state: String = "maharashtra"
     val welcomemsg: String = "Welcome to Maharashtra"
     if (state=="maharashtra") {
@@ -49,7 +49,7 @@ fun main(args: Array<String>) {
     val num2 = 20
     val num3 = 90
 
-    val graternum: Unit = if (num1 > num2) {
+    val greaternum: Unit = if (num1 > num2) {
         if (num1 > num3) {
             println("$num1 is Greater then $num2 and $num3")
         } else {
@@ -60,5 +60,5 @@ fun main(args: Array<String>) {
     } else {
         println("$num3 is Greater then $num1 and $num2")
     }
-    println(graternum)
+    println(greaternum)
 }

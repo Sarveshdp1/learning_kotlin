@@ -43,7 +43,6 @@ fun main() {
     // using build-in standard library functions
     //.rem() function to find the reminder
     println(5.rem(3)) //3*1=3 5-3=2 reminder is 2
-    println(sum(5,8)) // can only accepts 2 parameters
 
     var sumOfArray = arrayOf(22,44,23,54,2,32,55,75).sum()
     println(sumOfArray)

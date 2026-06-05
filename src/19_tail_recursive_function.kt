@@ -19,9 +19,9 @@ fun sumOfArray(arr: Array<Int>, index: Int, x: Int = 0): Int {
 }
 
 // fibonacci
-fun fibonacci(num: Int, x:Int = 0) : Int {
-    return if ((num == 1) || (num == 2)) x
-    else fibonacci(num-1, num-1+num-2)
+fun fibonaccitail(num: Int, previous:Int = 0, current:Int = 1) : Int {
+    return if (num == 1) current
+    else fibonaccitail(num-1, current, previous+current)
 }
 
 fun main() {
@@ -30,5 +30,5 @@ fun main() {
     val a: Array<Int> = arrayOf(1, 2, 3)
     println(sumOfArray(a, a.size))
 
-    println(fibonacci(6))
+    println(fibonaccitail(6))
 }

@@ -26,7 +26,7 @@ inline fun nonLocal(a:() -> Unit, b:() -> Unit) {
 
 // crossinline keyword
 // inline function allows lambda to return but it exites the higher-order function as-well
-// so crossline keyword is used in parameter declaration to decide weather which parameter lambda function not allowed to use return
+// so crossline keyword is used in parameter declaration to decide whether which parameter lambda function not allowed to use return
 // but the lambda is still an inline function
 
 // noinline keyword modifier
@@ -55,7 +55,7 @@ fun main() {
     higherOrderFacto(n,facto) // higher order inline function copy the facto lambda code to main function and execute it here
 
     // calling reified type check modifier
-    reifiedType<String>("Sarvesh") // coorect type
+    reifiedType<String>("Sarvesh") // correct type
     reifiedType<Int>(54.3f) // wrong type
 
     // calling inline property / inline variable

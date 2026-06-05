@@ -35,7 +35,7 @@ fun main() {
     // creates listIterator *[1,2,3,4,2,"Sarvesh"] in that all elements are listed and a cursor is pointer before the first element * is the cursor
     val listIterator = immutableList.listIterator()
 
-    // .hasNext which weather is there a next element in the ( true we have 1 )
+    // .hasNext which whether is there a next element in the ( true we have 1 )
     while (listIterator.hasNext()) {
         // .next() prints the next element available in list which is 1
         print("${listIterator.next()} ")
@@ -70,8 +70,8 @@ fun main() {
     println(unsortedList.sortedDescending())
 
     // checking elements
-    println(unsortedList.contains(5)) // checks weather list has the element or not
-    println(unsortedList.containsAll(listOf(5,2))) // checks weather list has those 2 elements or not
+    println(unsortedList.contains(5)) // checks whether list has the element or not
+    println(unsortedList.containsAll(listOf(5,2))) // checks whether list has those 2 elements or not
 
 
     // mutable list

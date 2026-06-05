@@ -37,5 +37,5 @@ fun main(args: Array<String>) {
     var g = arrayOf(3,1,5) // array
 
 
-    // F and L are suffix used to define weather its float or long type
+    // F and L are suffix used to define whether its float or long type
 }

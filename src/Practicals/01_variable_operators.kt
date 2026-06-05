@@ -51,7 +51,7 @@ fun main(args: Array<String>) {
 
     var scan = Scanner(System.`in`)
 
-    // is entered number is grater then 5 ?
+    // is entered number is greater than 5 ?
     print("Enter a number: ")
     val num:Int = scan.nextInt()
     val greater: Boolean = num > 5

@@ -48,7 +48,7 @@ fun main(args: Array<String>) {
     val input1 = readLine()!!
     when(input1) {
         "mars","earth","moon","pluto","saturn" -> println("$input1 is a Planet")
-        "monday","tuesday","wednesday","thirsday","friday","saturday","sunday" -> println("$input1 is a day")
+        "monday","tuesday","wednesday","thursday","friday","saturday","sunday" -> println("$input1 is a day")
         else -> println("Invalid Input")
     }
 

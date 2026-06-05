@@ -1,4 +1,4 @@
-// map is unorder collection that stores data in key-value pairs, it uses linkedHashMap which uses linkedList like set to manage the order
+// map is unordered collection that stores data in key-value pairs, it uses linkedHashMap which uses linkedList like set to manage the order
 // each key needs to be unique
 // each key can only store one value
 // if the key is repeated only the last value is retained

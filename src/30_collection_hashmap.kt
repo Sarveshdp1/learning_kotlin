@@ -1,6 +1,10 @@
 // hashmap is unordered mutable collection which stores data in key-value pair and the key needs to be unique but the value can be duplicate and the key only can store one value
 // hash table implemented hashmap does not guarantee of order of key-value neither the order on insertion
 
+// advice for when to use normal collection and hash collection
+// use set and map use when order is needed but performance is not needed for bulk element to add or remove
+// use hashset and hashmap when order is not needed but need instant performance for add or remove element
+
 fun main() {
 
     // there are four public constructor for hashmap
@@ -74,9 +78,4 @@ fun main() {
     employeesSalary.clear()
     println(employeesSalary)
     println("Employee Salary Map is Empty ? ${employeesSalary.isEmpty()}")
-
-
-    // advice for when to use normal collection and hash collection
-    // use set and map use when order is needed but performance is not needed for bulk element to add or remove
-    // use hashset and hashmap when order is not needed but need instant performance for add or remove element
 }
