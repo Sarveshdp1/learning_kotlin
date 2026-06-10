@@ -23,7 +23,7 @@ fun studmarks(rollno:Int, vararg arr:Int) {
 }
 
 // primitive Int array and Int
-inline fun mulTableOfNum(vararg a:Int, num:Int) {
+fun mulTableOfNum(vararg a:Int, num:Int) {
     for (i in 1..a.size-1) {
         println("$num x $i = ${a[i]}")
     }
