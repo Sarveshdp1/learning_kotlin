@@ -5,7 +5,7 @@
 
 **src folder context** - *files of concepts with examples and practical codes in it*<br>
 
--  **c00_practical** - *small projects learned concepts*
+-  **c00_practical** - *small projects of learned concepts*
 -  **c01_fundamentals** - *basic of kotlin*
 -  **c02_datatypes** - *primitive and non-primitive types, type conversion*
 -  **c03_condisional_expression** - *if, if-else, if-else-if ladder and when condition and expression*
