@@ -9,16 +9,16 @@ class GovernmentCollegeStudent(val myName:String, val myRollNo:Int) {
             return "Name and RollNo of Student\n\tName: $studName\n\tRollNo: $studRollNo"
         }
     }
-    val details = BcaStudent(myName, myRollNo)
-    fun studDetails():Unit {
+    fun studDetails() {
+        val details = BcaStudent(myName, myRollNo)
         println(details.studentDetails())
     }
 }
 
 // nested class creation
-class PrivateCollegeStudent() {
+class PrivateCollegeStudent {
     class BcaStudent(val studName: String, val studRollNo:Int) {
-        fun studentDetails():Unit {
+        fun studentDetails() {
             println("Name and RollNo of Student\n\tName: $studName\n\tRollNo: $studRollNo")
         }
     }
