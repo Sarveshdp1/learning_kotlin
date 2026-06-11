@@ -13,7 +13,7 @@ class PersonalDetails{
     var gender: Char = 'M'
 
     // member function
-    fun showDetails():Unit {
+    fun showDetails() {
         println("FirstName: $firstName\nLastName: $lastName\nAge: $age\nGender: $gender")
     }
 
