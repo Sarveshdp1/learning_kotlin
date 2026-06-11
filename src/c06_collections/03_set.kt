@@ -60,7 +60,7 @@ fun main() {
     println(mutableSet)
     println()
 
-    // iterator creates iterator and work based on cursor detailed explanation available in 02_collection_list.kt
+    // iterator creates iterator and work based on cursor detailed explanation available in 02_list.kt
     val iterator = mutableSet.iterator()
     while (iterator.hasNext()) print("${iterator.next()} ")
     println()
