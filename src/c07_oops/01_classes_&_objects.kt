@@ -1,4 +1,4 @@
-package c07_oops_concept// class is a blueprint to create object
+package c07_oops// class is a blueprint to create object
 // classes stores properties(variable,etc) and functions
 // object are created using classes to access the classes properties and functions
 // multiple objects can be created if same class with different values/arguments(parameters) like create a single variable but use it with different multiples values without creating multiple variable or changing values

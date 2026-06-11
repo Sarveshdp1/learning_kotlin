@@ -1,4 +1,4 @@
-package c07_oops_concept// class inside class are called nested or inner class with their different features
+package c07_oops// class inside class are called nested or inner class with their different features
 
 // nested class is a class created inside another class without inner keyword by default nested class don't have access of outer class members
 
