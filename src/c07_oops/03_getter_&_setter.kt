@@ -14,8 +14,7 @@ package c07_oops
 // 2. val - immutable (read-only) value cannot change after creation only getter works
 
 fun main() {
-    var name:String
-    name = "Sarvesh"
+    var name = "Sarvesh"
     val age = 20
 
     name = "Tony"
