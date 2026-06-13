@@ -2,7 +2,7 @@ package c07_oops// class inside class are called nested or inner class with thei
 
 // nested class is a class created inside another class without inner keyword by default nested class don't have access of outer class members
 
-// accessing nexted class property using object of nested class
+// creating object of nested class inside outer class and also calling member function of nested class
 class GovernmentCollegeStudent(val myName:String, val myRollNo:Int) {
     class BcaStudent(val studName: String, val studRollNo:Int) {
         fun studentDetails():String {
@@ -15,7 +15,7 @@ class GovernmentCollegeStudent(val myName:String, val myRollNo:Int) {
     }
 }
 
-// nested class creation
+// nested class creation without object
 class PrivateCollegeStudent {
     class BcaStudent(val studName: String, val studRollNo:Int) {
         fun studentDetails() {
@@ -27,7 +27,7 @@ class PrivateCollegeStudent {
 // inner class is a nested class with inner keywords unlike nested class the inner class can access the members of outer class
 class Google{
 
-    val about = "kt07_object_oriented_programming.Google created search engine"
+    val about = "Google created search engine"
 
     inner class InnerClass{
         fun aboutGoogle(){
@@ -42,14 +42,17 @@ fun main() {
     val name = readln()
     print("Enter your Roll No.: ")
     val rollNo = readln().toInt()
+    println()
 
-    // accessing nested class property with outer class object
+    // accessing nested class by creating object of outer class
+    // the nested class object creation and call of the nested class member function is happening in outer class
     val govClgBcaStudent = GovernmentCollegeStudent(name, rollNo)
     govClgBcaStudent.studDetails()
 
     println()
 
-    // accessing nested class property without creating object of nested class inside outer class
+    // accessing nested class by creating object of nested class
+    // accessed the nested class by using . (dot/member access) operator then created the object for it
     val pvtClgBcaStudent = PrivateCollegeStudent.BcaStudent(name,rollNo)
     pvtClgBcaStudent.studentDetails()
     println()
