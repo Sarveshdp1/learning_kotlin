@@ -1,9 +1,13 @@
 # <p align="center">**_Hello, It's Sarvesh_**</p>
 
-*I have started learning kotlin from May 13 2026* <br>
-*Here i will be sharing my jurney of learning kotlin via practical files of concepts with examples and small projects within .kt files* <br><br>
+<div align="center">
 
-**src folder context** - *files of concepts with examples and practical codes in it*<br>
+  *I have started learning kotlin from May 13 2026* <br>
+  *Here i will be sharing my jurney of learning kotlin via practical files of concepts with examples and small projects within .kt files* <br><br>
+
+  **src folder context** - *files of concepts with examples and practical codes in it*
+
+</div><br>
 
 -  **c00_practical** - *small projects of learned concepts*
 -  **c01_fundamentals** - *basic of kotlin*
