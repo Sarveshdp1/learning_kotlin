@@ -1,5 +1,8 @@
 package c04_loops
 
+// do-while loop - execute body first then checks condition
+// executes body at least once before checking condition
+
 import java.util.Scanner
 
 fun main(args: Array<String>) {

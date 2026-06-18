@@ -2,7 +2,10 @@ package c03_conditional_expressions
 
 // when expression is also can be used as statement
 // its like the switch case in java
-// when don't need any break statement at the end
+// executes condition statement when a values matches
+// executes else when no values match
+// no break statement is required
+
 fun isOdd(num: Int) = num % 2 != 0
 fun isEven(num: Int) = num % 2 == 0
 

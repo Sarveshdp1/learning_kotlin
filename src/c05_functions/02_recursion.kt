@@ -1,11 +1,13 @@
-package c05_functions// function recursion happens when the function calls it-self which is called recursive function
+package c05_functions
+
+// function recursion happens when the function calls it-self which is called recursive function
 
 /*
 - recursive function calls the function it-self till the condition become true and store the function calls in stack memory
 - then while return it come in reverse order and do the operation which were waiting while the function is calling it-self
  */
 
-// kt05_functions.factorial
+// factorial
 fun factorial(num: Int) : Long {
     var result:Long = 0
     if (num == 1) return 1.toLong()
@@ -15,7 +17,7 @@ fun factorial(num: Int) : Long {
     return result
 }
 
-// kt05_functions.fibonacci
+// fibonacci
 fun fibonacci(num: Int):Long {
     return if ((num == 1) || (num == 2)) {
         1L
@@ -24,7 +26,7 @@ fun fibonacci(num: Int):Long {
     }
 }
 
-// Kt01_Fundamentals.sum of array elements
+// sum of array elements
 fun sumArray(args: Array<Int>, index: Int): Int {
     return if (index <= 0) {
         0

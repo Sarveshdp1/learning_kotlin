@@ -4,6 +4,7 @@ package c01_fundamentals
 // val is immutable
 // var is mutable
 // every variable name convention is using lowerCamelCase only
+
 fun main() {
     val a = 5 // immutable
     //a = 10 error val cannot be reassigned

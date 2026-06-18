@@ -3,14 +3,15 @@ package c07_oops
 import java.util.Scanner
 
 /*
- constructor is a special member function that called automatically when the object of class is created
- constructor parameters are like function parameters but have different purpose to initialize properties and perform startup operation
- constructor initialize/holds properties in form of parameters
- provides features (default arguments, named arguments, multiple constructors, initializer block)
+ constructor - a special member function that called automatically when the object of class is created
+ constructor parameters - itd like function parameters but have different purpose to initialize properties and perform startup operation
+ constructor parameters provides features - default arguments, named arguments, multiple constructors, initializer block
 
  constructors have two types
  1. primary - defined inside parentheses after class name
+    primary constructor parameters - works different then function parameters, it creates a permanent property in class
  2. secondary - defined inside class body with constructor keyword
+    secondary constructor parameters - works exactly same like function parameters there variables are temporary
 
  class can have only one primary constructor but multiple secondary constructors
  we cannot access parameter or body of secondary constructor outside the secondary constructor or class

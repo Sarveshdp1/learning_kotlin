@@ -6,7 +6,6 @@ fun sum(a: Float, b:Float) : Float {
     return a+b
 }
 
-
 fun main(args : Array<String>) {
 
     var a: Float = 5.22f
@@ -15,7 +14,7 @@ fun main(args : Array<String>) {
 
     // readLine() function the !! is to insure the input value is no null
     print("Type your name: ")
-    var name : String = readLine()!! // readline can only read String but you can convert it using .toIntOrNull etc
+    var name : String = readLine()!! // readline can only read String also can convert it using .toIntOrNull etc
     println("Your Name is $name")
 
 

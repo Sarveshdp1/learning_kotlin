@@ -1,10 +1,12 @@
-package c05_functions// infix notation is used in function so we can also call those function without using "()" parenthesis and "." dots
+package c05_functions
+
+// infix notation is used in function so we can also call those function without using "()" parenthesis and "." dots
 // like and operators function we can call .and() directly using and (these are standard library defined infix notation functions)
 // 2 types of infix notation functions 1.library, 2.user-defined
 // infix notation function can only be created inside a class (member/extension function) and can only contain single parameter and no default value
 
 
-// created a class named kt05_functions.math
+// created a class named math
 class math {
     // created single parameter infix notation function as member function
     infix fun factorial(a:Int):Int {
@@ -40,14 +42,14 @@ fun main() {
     // using infix notation
     if ((math > 40) and (java > 40)) println("Pass"); else println("fail")
 
-    // created object for kt05_functions.math class
+    // created object for math class
     val mathClass = math()
-    // called kt05_functions.factorial function using infix notation
+    // called factorial function using infix notation
     val result = mathClass factorial 3
     println("Factorial of 3 is $result")
     println("Factorial of 5 is ${math() factorial 5}")
 
-    // creating object for kt05_functions.typeCheck class
+    // creating object for typeCheck class
     val checkType = typeCheck()
     println("DataTpe of 25.43f is ${checkType dataType 25.43f}")
     println("DataType of Sarvesh is ${checkType dataType "Sarvesh"}")

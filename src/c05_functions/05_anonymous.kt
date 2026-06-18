@@ -1,4 +1,6 @@
-package c05_functions// anonymous function is a function without name and store inside variable and call using variable name
+package c05_functions
+
+// anonymous function is a function without name and store inside variable and call using variable name
 // anonymous function only return from it-self not the whole function
 
 // find number even or odd and negative or positive

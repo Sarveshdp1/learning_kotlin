@@ -1,6 +1,8 @@
-package c05_functions// varargs (variable arguments) it allows to store variable number of argument of same type
+package c05_functions
+
+// varargs (variable arguments) it allows to store variable number of argument of same type
 // varargs internally stores arguments as an array
-// we can use array functions like .indices, .size, .Kt01_Fundamentals.sum etc
+// we can use array functions like .indices, .size, sum etc
 // varargs parameter can only be one in a function and must be in the last and if its on first or in middle then use named arguments
 
 // use * spread operator to pass the array elements to the varargs arguments but if using named arguments then no need to used spread operator

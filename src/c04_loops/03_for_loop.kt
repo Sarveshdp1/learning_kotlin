@@ -1,6 +1,7 @@
 package c04_loops
 
-import kotlin.text.iterator
+// for loop is used for iteration
+// unlike while loop, do-while loop the for loop handles variable, condition and progression by itself, just need to a provide range to iterate over
 
 fun main(args: Array<String>) {
 

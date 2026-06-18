@@ -1,4 +1,6 @@
-package c05_functions// higher order function are functions which accepts functions as parameters or returns functios
+package c05_functions
+
+// higher order function are functions which accepts functions as parameters or returns functions
 
 // lambda function accept Int parameter and return Unit
 val aligibility = {a:Int -> if (a>=18) println("congratulations you are eligible"); else println("not eligible")}
@@ -11,7 +13,7 @@ var addition = {a:Int, b:Int -> a+b}
 
 // higher-order function accept function which accept no parameters and return Unit
 fun higherOrder(a:() -> Unit) {
-    a() // invoke/call the kt05_functions.lam function by passing no parameters
+    a() // invoke/call the lam function by passing no parameters
 }
 
 // higher-order function accept function which accept Int and returns Unit
@@ -31,7 +33,7 @@ fun higherOrderAddition(a:(Int, Int) -> Int) {
     println("Addition of 5 and 2 is $result")
 }
 
-// accept one parameter and return kt05_functions.factorial of the num (Int)
+// accept one parameter and return factorial of the num (Int)
 fun facto(num:Int): Int {
     var result = 1
     for (i in num downTo 1) {
@@ -44,7 +46,7 @@ fun facto(num:Int): Int {
 // accept two parameters 1.Int 2.function and return Unit
 fun higherOrderFacto(num: Int, func:(Int) -> Int) {
     val result = func(num)
-    println("kt05_functions.factorial of $num is $result")
+    println("factorial of $num is $result")
 }
 
 // normal function which takes single Int parameter and return Int value
@@ -62,30 +64,30 @@ fun main() {
 
     // calling higher-order function
 
-    // kt05_functions.lam is a lambda with no parameters and Unit return type,
-    // matching kt05_functions.higherOrder parameter type
+    // lam is a lambda with no parameters and Unit return type,
+    // matching higherOrder parameter type
     higherOrder(lam)
 
-    // because the kt05_functions.higherOrder function only accepts no parameter () function the {} which creates another lambda which return's the unit which is what the kt05_functions.higherOrder parameter needs a function that returns unit
+    // because the higherOrder function only accepts no parameter () function the {} which creates another lambda which return's the unit which is what the higherOrder parameter needs a function that returns unit
     higherOrder { aligibility(25) }
 
-    // here the parameters for the lambda function is defined in the kt05_functions.higherOrderInt function so while the kt05_functions.higherOrderInt calls the kt05_functions.aligibility lambda function it passes the Int argument to lambda function parameters
+    // here the parameters for the lambda function is defined in the higherOrderInt function so while the higherOrderInt calls the aligibility lambda function it passes the Int argument to lambda function parameters
     higherOrderInt(aligibility)
 
-    // calling kt05_functions.aligibility lambda function which add 2 numbers and return Int using higher-order function
+    // calling aligibility lambda function which add 2 numbers and return Int using higher-order function
     higherOrderAddition(addition)
 
-    // calling the higher-order function and passing the arguments for kt05_functions.aligibility lambda function
+    // calling the higher-order function and passing the arguments for aligibility lambda function
     higherOrderinput(20,aligibility)
 
-    // calling the higher-order function and passing the argument for kt05_functions.factorial normal function
+    // calling the higher-order function and passing the argument for factorial normal function
     // :: is used to make/reference a function as a value so it can be passed as parameter but lambda is a function value so we don't need it for lambda
     higherOrderFacto(5,::facto)
 
-    // it calls kt05_functions.higherOrderFibo function which returned the kt05_functions.fibo normal function soo work this variable is now can be used to call kt05_functions.fibo function
+    // it calls higherOrderFibo function which returned the fibo normal function soo work this variable is now can be used to call fibo function
     val fibocall = higherOrderFibo()
-    // calling kt05_functions.fibo function and passing argument then it returned Int value which is stored in result variable
+    // calling fibo function and passing argument then it returned Int value which is stored in result variable
     val result = fibocall(6)
     // printing the value of result variable using println function
-    println("kt05_functions.fibonacci of 6 is $result")
+    println("fibonacci of 6 is $result")
 }

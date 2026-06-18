@@ -1,4 +1,8 @@
-package c03_conditional_expressions// if else statement/expression is used to make decision whether it true or false
+package c03_conditional_expressions
+
+// if/else statement/expression is used to make decisions on whether a conditions is true or false
+// executes if or else-if block when condition is true
+// executes else block when all preceding condition is false
 
 fun main(args: Array<String>) {
     val num = 5
@@ -49,7 +53,7 @@ fun main(args: Array<String>) {
     val num2 = 20
     val num3 = 90
 
-    val greaternum: Unit = if (num1 > num2) {
+    val greaterNum: Unit = if (num1 > num2) {
         if (num1 > num3) {
             println("$num1 is Greater then $num2 and $num3")
         } else {
@@ -60,5 +64,5 @@ fun main(args: Array<String>) {
     } else {
         println("$num3 is Greater then $num1 and $num2")
     }
-    println(greaternum)
+    println(greaterNum)
 }

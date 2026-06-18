@@ -1,5 +1,7 @@
 package c04_loops
 
+// continue statement - skips remaining statement after continue keyword in the current iteration and jump to next iteration
+
 fun main(args: Array<String>) {
 
     // unlabeled

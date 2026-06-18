@@ -1,6 +1,9 @@
 package c05_functions
 
-// for Kt01_Fundamentals.sum kotlin has default function named Kt01_Fundamentals.sum called library standard functions like arrayOf() , Kt01_Fundamentals.sum(), rem()
+// function - block of code which stores specific operation and created using fun keyword
+// function parameter - variable defined inside () parenthesis used to store input values which we pass while calling function its is a temporary storage
+
+// for sum kotlin has default function named sum called library standard functions like arrayOf() , Kt01_Fundamentals.sum(), rem()
 fun sum2(a: Int, b: Int) : Int {
     var c = a+b
     return c
@@ -17,11 +20,13 @@ fun student(name:String, rollNo:Int, div: Char = 'A') {
 }
 
 // default arguments
+// function uses default value when we don't pass argument while calling function
 fun sayhallo(name: String = "World") {
     println("Hello $name")
 }
 
-// for named function calling
+// for named argument calling
+// used to pass argument using parameter names
 fun employ(name:String, age:Int, experience:Int = 2) {
     println("Hello $name")
     when (age) {
@@ -53,6 +58,6 @@ fun main() {
     println(sayhallo())
     println(sayhallo("Sarvesh"))
 
-    // named function calling
+    // named argument
     println(employ(age = 24, name = "Sarvesh"))
 }

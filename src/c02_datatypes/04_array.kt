@@ -1,4 +1,6 @@
-package c02_datatypes// arrays are collection of element and each element can store same type of data
+package c02_datatypes
+
+// arrays are collection of element and each element can store same type of data
 // array size are immutable but element values are mutable
 // types of array
 // 1. object array (generic / boxed array) created using Array<T>() , arrayOf()

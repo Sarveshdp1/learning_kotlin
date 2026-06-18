@@ -1,5 +1,7 @@
 package c02_datatypes
 
+// string - sequence/collection of characters
+
 fun main(args: Array<String>) {
 
     // empty string declaration
@@ -96,7 +98,7 @@ fun main(args: Array<String>) {
     println("%(d %2\$d".format(-50, 399646466L))
 
     // created formated string variable
-    val new = String.format("%s kt05_functions.age is %d",myName, 555)
+    val new = "%s age is %d".format(myName, 20)
     println(new)
 
     // string functions

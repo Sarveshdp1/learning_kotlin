@@ -1,4 +1,6 @@
-package c01_fundamentals// operators are used to do calculations
+package c01_fundamentals
+
+// operators are used to do calculations
 // operators has 6 types
 // Arithmetic + - * / %
 // Relational < > <= >= == !=

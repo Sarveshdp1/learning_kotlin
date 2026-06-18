@@ -1,8 +1,10 @@
 package c04_loops
 
+// break statement - exits loop immediately when the specified condition is met
+
 fun main(args: Array<String>) {
     var num = 1
-    var sum = 0
+    val sum = 0
 
     /* while loop
     while(num<10) {
@@ -37,9 +39,6 @@ fun main(args: Array<String>) {
     }
     println("iterated process: $sum3")
 
-
-
-
     var planet = arrayOf("Earth", "Mars", "Jupiter", "Saturn")
     var lol = 0
     do {
@@ -51,10 +50,10 @@ fun main(args: Array<String>) {
     } while(lol<=planet.size-1)
 
 
-
-    // break and return both are same
      */
 
+
+    // tagged break
     it@ for (i in 1..10) {
         for (j in 1..10)
             print(j)
