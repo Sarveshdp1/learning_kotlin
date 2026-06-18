@@ -5,9 +5,9 @@
   *I have started learning kotlin from May 13 2026* <br>
   *Here i will be sharing my jurney of learning kotlin via practical files of concepts with examples and small projects within .kt files* <br><br>
 
-  **src folder context** - *files of concepts with examples and practical codes in it*
-
 </div><br>
+
++ **src folder context** - *files of concepts with examples and practical codes in it*
 
 -  **c00_practical** - *small projects of learned concepts*
 -  **c01_fundamentals** - *basic of kotlin*
