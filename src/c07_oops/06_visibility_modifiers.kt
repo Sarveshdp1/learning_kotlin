@@ -145,8 +145,8 @@ fun main() {
     println()
 
     // creating object without storing it in variable
-    DisplayGreeting("Sarvesh").greet()
-    studInfo("BCA", 2024)
+    DisplayGreeting(name).greet()
+    studInfo(b, yr)
     println()
 
     // creating and storing object in variable
