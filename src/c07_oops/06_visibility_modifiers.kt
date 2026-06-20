@@ -135,7 +135,7 @@ class UpdateAge(val x:Int) : MyAge() {
     }
 }
 
-private fun main() {
+fun main() {
 
     // creating object without storing it in variable
     DisplayGreeting("Sarvesh").greet()
