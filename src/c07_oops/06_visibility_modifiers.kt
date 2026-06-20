@@ -22,7 +22,7 @@ class DisplayGreeting(val name:String) {
 
 // private top-level function
 private fun studInfo(branch:String, year:Int){
-    println("\tBranch - $branch\n\tAdmission year - $year")
+    println("\tBranch - $branch\n\tYear of Admission - $year")
 }
 
 // private top-level class
@@ -136,10 +136,16 @@ class UpdateAge(val x:Int) : MyAge() {
 }
 
 fun main() {
+    print("Enter your name: ")
+    val name = readln()
+    print("Enter branch: ")
+    val b = readln()
+    print("Enter year of admission: ")
+    val yr = readln().toInt()
+    println()
 
     // creating object without storing it in variable
     DisplayGreeting("Sarvesh").greet()
-
     studInfo("BCA", 2024)
     println()
 
