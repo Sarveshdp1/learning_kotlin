@@ -27,7 +27,7 @@
  | `c07_oops` | Object-Oriented Programming concepts `classes` and `objects` |
 
  ---
- </div><br>
+ </div>
  
  ## 🎯 Goal
  My goal is to build strong fundamental understanding in Kotlin and Android development by:
