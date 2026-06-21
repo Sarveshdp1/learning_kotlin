@@ -1,20 +1,43 @@
-# <p align="center">**_Hello, It's Sarvesh_**</p>
-
 <div align="center">
+ 
+ # Hello, It's Sarvesh👋
+ 
+ Learning Kotlin since **May 13 2026** 🚀
+ 
+ **Currently learning:** Object-Oriented Programming 📖 
+ 
+ This repository documents my Kotlin learning journey through hands-on examples, practical exercises and small projects.
 
-  *I have started learning kotlin from May 13 2026* <br>
-  *Here i will be sharing my jurney of learning kotlin via practical files of concepts with examples and small projects within .kt files* <br><br>
+ Rather than focusing only on theory, I understand concepts by writing code and building small practical programs.
+ 
+ ---
+ 
+ ## 📂 Project Structure
+ 
+ The `src` folder contains concept-based files which includes explanations, examples and practical implementations.
+ | 📂 **Folder** | 📝 **Description** |
+ |---|---|
+ | `c00_practical` | Small projects built using previously learned concepts |
+ | `c01_fundamentals` | Kotlin fundamentals and basic syntax `val, var`, `print(), println()`, etc |
+ | `c02_datatypes` | Primitive and non-primitive data types `integer`,`floating-point`,`boolean`,`char`,`string`,`array`, and type conversion |
+ | `c03_conditional_expression` | `if`, `if-else`, `if-else-if ladder`, and `when` conditions and expressions |
+ | `c04_loops` | `while`, `do-while`, `for` loops, and control flow statements `break`, `continue` |
+ | `c05_functions` | Function types `standard`,`inline`,`infix`,`higher-order`,`recursion`,`lambda`,`anonymous`, and features |
+ | `c06_collections` | Collection types `ArrayList`,`list`,`set`,`hashset`,`map`,`hashmap`, and features|
+ | `c07_oops` | Object-Oriented Programming concepts `classes` and `objects` |
 
-</div><br>
+ ---
+ </div>
+ 
+ ## 🎯 Goal
+ My goal is to build strong fundamental understanding in Kotlin and Android development by:
+ - Learning core language concepts
+ - Writing practical code examples
+ - Building small projects
+ - Exploring Kotlin best practices
+ - Preparing for Android development
 
-+ **src folder context** - *files of concepts with examples and practical codes in it*
+---
 
--  **c00_practical** - *small projects of learned concepts*
--  **c01_fundamentals** - *basic of kotlin*
--  **c02_datatypes** - *primitive and non-primitive types, type conversion*
--  **c03_condisional_expression** - *if, if-else, if-else-if ladder and when condition and expression*
--  **c04_loops** - *while, do-while, for loops and break/continue control flow statements*
--  **c05_functions** - *types of functions and features*
--  **c06_collections** - *dynamic array (arrayList), different types of collections and features
--  **c07_oops** - *Object-Oriented Programming concepts (classes and objects)*
-
+ ### ⭐ Progress
+ This repository will continue to grow as I learn new Kotlin concepts.
