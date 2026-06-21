@@ -135,6 +135,56 @@ class UpdateAge(val x:Int) : MyAge() {
     }
 }
 
+// constructor by default are public, but we can also change constructor visibility by using modifier
+// we must explicitly specify this by using the constructor keyword
+
+// private constructor can only access with members
+class Calculator private constructor(val a:Int, val b:Int) {
+    init {
+        println("Sum of $a and $b is ${a + b}")
+    }
+
+    // companion object is the object inside class itself and allows to call the member without creating object, will learn about this in objects
+    companion object {
+        fun passArgs(a: Int, b: Int): Calculator {
+            return Calculator(a, b)
+        }
+    }
+}
+
+// protected constructor can access with class member or subclass
+open class Factorial protected constructor(val x:Int) {
+    fun a(a:Int = x) {
+        var result = 1
+        for (i in x downTo 2) {
+            result *= i
+        }
+        println(result)
+    }
+}
+// subclass
+class PassArgsForFactorial(num:Int) : Factorial(num) {
+    init {
+        a()
+    }
+}
+
+// internal constructor can access inside module
+class Fibonacci internal constructor(num:Int) {
+    init {
+        var a = 0
+        var b = 1
+        var result = 0 // starting from 0
+        for (i in 1..num) {
+            result = a
+            val temp = a + b
+            a = b
+            b = temp
+        }
+        println(result)
+    }
+}
+
 fun main() {
     print("Enter your name: ")
     val name = readln()
@@ -167,5 +217,13 @@ fun main() {
 
     println("Old Age - ${MyAge().getAge()}")
     println("Updated Age - ${UpdateAge(25).getAge()}")
+    println()
 
+    Calculator.passArgs(5, 5)
+
+    print("Factorial of 8: ")
+    PassArgsForFactorial(8)
+
+    print("Fibonacci at 13: ")
+    Fibonacci(13)
 }
