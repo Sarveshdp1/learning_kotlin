@@ -245,8 +245,10 @@ fun main() {
     print("Fibonacci at 13: ")
     Fibonacci(13)
 
+    // object of scanner class for user input
     val scan = Scanner(System.`in`)
 
+    // user input for arguments
     println("Enter Subjects Marks below")
     print("Math: ")
     val math = scan.nextFloat()
@@ -255,5 +257,6 @@ fun main() {
     print("DSA: ")
     val dsa = scan.nextFloat()
 
+    // private secondary constructor call using companion object
     Percentage.findPercentage(math,java,dsa)
 }
