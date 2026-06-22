@@ -1,5 +1,7 @@
 package c07_oops
 
+import java.util.Scanner
+
 // visibility modifiers controls the visibility/access of the class and class members (properties, functions and nested classes) and its constructor
 
 // private - restricts the visibility of the member to the containing class only, member cannot access outside the class
@@ -152,6 +154,22 @@ class Calculator private constructor(val a:Int, val b:Int) {
     }
 }
 
+// private secondary constructor
+class Percentage {
+    var result:Double = 0.0
+
+    private constructor(sub1:Float, sub2:Float, sub3:Float) {
+        result = ((sub1 + sub2 + sub3) / 3.0)
+        println("%.2f Percentage".format(result))
+    }
+
+    companion object {
+        fun findPercentage(s1:Float, s2:Float, s3:Float): Percentage {
+            return Percentage(s1,s2,s3)
+        }
+    }
+}
+
 // protected constructor can access with class member or subclass
 open class Factorial protected constructor(val x:Int) {
     fun a(a:Int = x) {
@@ -226,4 +244,16 @@ fun main() {
 
     print("Fibonacci at 13: ")
     Fibonacci(13)
+
+    val scan = Scanner(System.`in`)
+
+    println("Enter Subjects Marks below")
+    print("Math: ")
+    val math = scan.nextFloat()
+    print("Java: ")
+    val java = scan.nextFloat()
+    print("DSA: ")
+    val dsa = scan.nextFloat()
+
+    Percentage.findPercentage(math,java,dsa)
 }
