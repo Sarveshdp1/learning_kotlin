@@ -48,7 +48,7 @@ class Sub(name: String, lastName: String) : Base(name.replaceFirstChar { it.uppe
 
 // creating baseclass for employees which contains common employee details and multiple subclasses that add their own specialized features
 // baseclass
-private open class Employee(val name:String , val age:Int, val salary:Int, val prevCompany:String) {
+private open class Employee(name:String , age:Int, salary:Int, prevCompany:String) {
     init {
         println("""
             Personal Details of Employee:
