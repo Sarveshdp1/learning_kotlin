@@ -34,7 +34,7 @@ private class Mobile : Product {
 // the functions declared inside interfaces can have default implementation in body and also default parameters (its in normal function not abstract function)
 private interface Favorite {
     fun flower ( /*default argument */ name:String = "Rose", color:String = "Red"){
-        // default implementation
+        // method declaration can have default implementation (optional) (It's not an abstract function)
         println("(Default implementation)")
         println("Favorite flower name is $name, and its color is $color")
     }
@@ -64,7 +64,7 @@ interface Salary {
     // abstract property
     val oldAmount: Int
 
-    // default implementation (no backing field)
+    // property declaration can have default implementation (no backing field) (optional) (It's not an abstract property)
     val currentAmount: Int
         get() = 46000
 }
@@ -158,14 +158,14 @@ fun main() {
     println("Current Salary Amount: ${emp.currentAmount}")
     println()
 
-    print("Enter Width of Square: ")
+    print("Enter Width of Rectangle: ")
     val width = readln().toDouble()
-    print("Enter Breadth of Square: ")
+    print("Enter Breadth of Rectangle: ")
     val breadth = readln().toDouble()
 
     val obj = Rectangle(width, breadth)
-    println("Area of Square: ${obj.area()}")
-    println("Perimeter of Square: ${obj.perimeter()}")
+    println("Area of Rectangle: ${obj.area()}")
+    println("Perimeter of Rectangle: ${obj.perimeter()}")
 
     val scan = Scanner(System.`in`)
 
