@@ -4,7 +4,7 @@ package c07_oops
 // derived class inherits all properties and functions of the super class except private, meaning it can access and override the inherited members and can also create new one
 
 // inheritance is the most important concept Object-Oriented Programming it help in code reusability and clean code
-// allows all the features of the superclass to inherited by the subclass, in addition the derived class can add some features of its own
+// allows all the features of the superclass to be inherited by the subclass, in addition the derived class can add some features of its own
 
 // in Kotlin all the class are final. To permit the derived class to inherit from base class, we must use open keyword in front of base class
 
@@ -72,7 +72,7 @@ private class WebDeveloper(name:String, age:Int, salary:Int, prevCompany:String)
 }
 // subclass 2
 private class AndroidDeveloper(name:String, age:Int, salary:Int, prevCompany:String) : Employee(name,age,salary,prevCompany) {
-    fun andridDevIntro() {
+    fun androidDevIntro() {
         println("""
             
             Hello Everyone,
@@ -104,6 +104,80 @@ private class WindowsSoftwareDeveloper(name:String, age:Int, salary:Int, prevCom
     }
 }
 
+// inheritance primary constructor
+private open class Movie(val name:String) {
+    open fun printInfo() {
+        println("The Movie $name is a great movie")
+    }
+}
+
+private class Director(val movieName:String, val directorName:String) : Movie(movieName) {
+    override fun printInfo() {
+
+        super.printInfo()
+
+        println("\tIt's Directed by $directorName")
+    }
+}
+
+// inheritance secondary constructor
+private open class OldMembers {
+    constructor(newMem1: String, newMem2: String, newMem3: String) {
+        println(
+            """
+            List of Old Members of House:
+                Member 1: $newMem1
+                Member 2: $newMem2
+                Member 3: $newMem3
+            
+        """.trimIndent()
+        )
+    }
+}
+
+private class NewMember : OldMembers {
+    constructor(oldMem1: String, oldMem2: String, oldMem3: String, newMem1: String, newMem2: String) : super(oldMem1, oldMem2, oldMem3) {
+        println(
+            """
+            List of New Members of House:
+                Member 1: $newMem1
+                Member 2: $newMem2
+            
+        """.trimIndent()
+        )
+    }
+}
+
+// Overriding Functions and Properties
+// we use overriding when we need to declare a new function with same name and numbers of arguments or property with same name and type in subclass while it already exist in the baseclass
+// to allow the member for overriding we must declare it using open keyword
+// to override the member we must declare it using override keyword
+private open class Detail {
+    open val name:String = "Manish"
+
+    open fun intro() {
+        println("""
+            Hello It's $name,
+                How are you guys doing!
+        """.trimIndent())
+    }
+}
+
+// calling the super class implementation (original not overridden)
+// we can also access the baseclass property and call the function in subclass using super keyword with dot notation (super.name or super.run(a,b))
+private class Details2 : Detail() {
+    override val name:String = "Rohit"
+
+    override fun intro() {
+        println("Hello It's $name,\n\tHow's going on guys!")
+    }
+
+    fun baseClassData() {
+        println("Value inside baseclass \"Name\" property: ${super.name}\n")
+        println("Calling intro function from baseclass")
+        super.intro()
+    }
+}
 
 fun main() {
 
@@ -122,7 +196,7 @@ fun main() {
     println("-------------------------------------------------------")
 
     val androidDev = AndroidDeveloper("rinku", 28, 15, "Evecol")
-    androidDev.andridDevIntro()
+    androidDev.androidDevIntro()
     println("-------------------------------------------------------")
 
     val iosDev = IOSDeveloper("manish", 24, 8, "NesTech")
@@ -132,5 +206,21 @@ fun main() {
     val winSoftWeb = WindowsSoftwareDeveloper("Anmol", 38, 45,"SoftInfo")
     winSoftWeb.windowsSoftwareDevIntro()
     println("-------------------------------------------------------")
+    println()
 
+    val movieInfo = Director("Interstellar", "Christopher Nolan")
+    movieInfo.printInfo()
+    println("-------------------------------------------------------")
+    println()
+
+    NewMember("Ritika", "Taniya", "Priya", "Tanya", "Khushi")
+
+    println("-------------------------------------------------------")
+    println()
+
+    Details2().intro()
+    println()
+    Details2().baseClassData()
+    println("-------------------------------------------------------")
+    println()
 }
