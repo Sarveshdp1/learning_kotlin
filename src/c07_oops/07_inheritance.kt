@@ -111,7 +111,7 @@ private open class Movie(val name:String) {
     }
 }
 
-private class Director(val movieName:String, val directorName:String) : Movie(movieName) {
+private class Director(movieName:String, val directorName:String) : Movie(movieName) {
     override fun printInfo() {
 
         super.printInfo()
