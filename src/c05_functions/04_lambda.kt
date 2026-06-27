@@ -1,6 +1,6 @@
 package c05_functions
 
-// lambda function is store inside a variable as an expression
+// lambda function is stored inside a variable as an expression
 // lambda return will exit the whole function not only it-self
 
 // sum of 2 num

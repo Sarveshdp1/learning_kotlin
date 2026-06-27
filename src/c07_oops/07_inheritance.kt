@@ -149,7 +149,7 @@ private class NewMember : OldMembers {
 }
 
 // Overriding Functions and Properties
-// we use overriding when we need to declare a new function with same name and numbers of arguments or property with same name and type in subclass while it already exist in the baseclass
+// we use overriding when we need to declare a new function with same (name of function, numbers of arguments, type of arguments, return type of function) in subclass while it already exist in the baseclass
 // to allow the member for overriding we must declare it using open keyword
 // to override the member we must declare it using override keyword
 private open class Detail {
